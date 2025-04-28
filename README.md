@@ -16,22 +16,22 @@ Write a C program to print even numbers ranging from M to N (including M and N v
 ```
 #include <stdio.h>
 int main() {
-int M, N, i;
-printf("Enter the value of M: ");
-scanf("%d", &M);
-printf("Enter the value of N: ");
-scanf("%d", &N);
-printf("Even numbers from %d to %d are:\n", M, N);
-for (i = M; i <= N; i++) {
-if (i % 2 == 0) {
+int M, N;
+scanf("%d %d", &M, &N);
+int start = (M > N) ? M : N;
+int end = (M < N) ? M : N;
+if (start % 2 != 0) {
+start--;
+for (int i = start; i >= end; i -= 2) {
 printf("%d ", i);
-}
 }
 return 0;
 }
+
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/5ff82445-6824-4f17-906f-f24960a4e513)
+![image](https://github.com/user-attachments/assets/e822f72f-3c58-465e-87f5-97fccf5240f1)
+
 
 
 
@@ -80,7 +80,8 @@ return 0;
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/fc75fc6a-05dd-49df-9cda-a4ef1e512438)
+![image](https://github.com/user-attachments/assets/4930b0c9-939b-4155-9c82-faaf472d410f)
+
 
 
 
@@ -128,7 +129,7 @@ printf("Subtraction: %d",result_substraction);
 }
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/6fda1671-be4d-40d6-970d-9328b7d3a1fa)
+![image](https://github.com/user-attachments/assets/93698d01-4c90-4749-8a1a-3290be6e9fc5)
 
 
 
@@ -176,7 +177,7 @@ return 0;
 
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/ba8cc4ff-c2a5-4e4a-b9d0-b09b03198096)
+![image](https://github.com/user-attachments/assets/58730db7-c324-4a1f-8489-16e83624b205)
 
 
 
@@ -223,7 +224,7 @@ return 0;
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/16525b17-8c24-41cd-8dde-07749320a13a)
+![image](https://github.com/user-attachments/assets/ceba0a1a-b615-4840-ac25-7c2ad92da66c)
 
 ## RESULT:
 The program correctly computes the factorial of a given number using a separate function and displays the result.
