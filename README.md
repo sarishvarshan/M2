@@ -1,4 +1,5 @@
-name:m.sahithi
+## NAME : SARISH VARSHAN V
+## REG NO : 212223230196
 # EX-06 - Looping
 ## AIM:
 Write a C program to print even numbers ranging from M to N (including M and N values).
